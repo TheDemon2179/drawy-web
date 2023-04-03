@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drawy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <div class="header">
+    <h1>Drawy</h1>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="centered">
+	<canvas id="canvas" width="500" height="500"></canvas>
+  <br>
+</div>
+<div class="centered">
+  <button id="save" class="button">Save</button>   
+  <button id="clear" class="button">Clear</button>
+  </div>
+  <br>
+
+  <div class="centered">
+  <label for="brushSize">Brush size:</label>
+	<input type="range" id="brushSize" min="1" max="100" value="10">
+	<label for="colorPicker">Brush color:</label>
+	<input type="color" id="colorPicker" value="#000000">
+</div>
+
+  <br>
+  <div class="centered">
+  <button id="eraser" class="button">Eraser</button>
+</div>
+  <br>
+  <div class="centered">
+  <input type="range" id="canvasHeight" min="50" max="2000" value="1000">
+	<label for="canvasHeight">canvasHeight:</label>
+  <input type="range" id="canvasWidth" min="50" max="2000" value="1000">
+	<label for="canvasWidth">canvasWidth:</label>
+</div>
+	<script src="logic.js"></script>
+</body>
+</html>
